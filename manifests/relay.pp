@@ -53,5 +53,5 @@ class postfix::relay (
 
   postfix::config::maincfhelper { 'masquerade_domains': value => $masquerade_domains, }
 
-  postfix::config::maincfhelper { 'inet_interfaces': value => 'loopback-only', }
+  postfix::config::maincfhelper { 'inet_interfaces': value => 'all', }
 }
